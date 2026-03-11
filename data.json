@@ -1,352 +1,152 @@
 [
   {
-    "type": "B",
-    "title": "Frouard",
-    "desc": "Frouard is a commune in the Meurthe-et-Moselle department in the region of Grand Est, north-eastern France. It is located 10 km north of Nancy near the confluence of the Moselle and Meurthe. It is noted for its Medieval mill; and was latterly a steel industry centre. It is today mainly known as an inland port, and rail/waterway node on the French Waterway Network....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Frouard"
+    "type": "C",
+    "title": "Canthigaster sanctaehelenae",
+    "desc": "Canthigaster sanctaehelenae, known as the St. Helena sharpnose pufferfish, is a species of pufferfish in the family Tetraodontidae. It is native to the Southeast Atlantic, where it is known only from the islands of St. Helena and Ascension. It is a reef-associated species that occurs in tidal pools and rocky areas at depths of 50 m (164 ft) or less. Adults of the species are usually seen in pairs.",
+    "url": "https://en.wikipedia.org/wiki/Canthigaster_sanctaehelenae"
   },
   {
     "type": "B",
-    "title": "Brother and Sister (2010 film)",
-    "desc": "Brother and Sister is a 2010 Argentine comedy film directed by Daniel Burman....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Brother_and_Sister_(2010_film)"
-  },
-  {
-    "type": "B",
-    "title": "Rotherham General Hospital",
-    "desc": "Rotherham General Hospital is an acute general hospital in Rotherham, South Yorkshire, England. It is managed by the Rotherham NHS Foundation Trust....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Rotherham_General_Hospital"
-  },
-  {
-    "type": "B",
-    "title": "Robert Bernard Hall",
-    "desc": "Robert Bernard Hall was a member of the United States House of Representatives from Massachusetts. He was born in Boston on January 28, 1812. He entered the Boston Latin School, studied theology at Yale Divinity School in New Haven, Connecticut where he graduated in 1835, and was ordained to the ministry, first as a Congregationalist and then as an Episcopalian. Hall was one of the twelve original...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Robert_Bernard_Hall"
-  },
-  {
-    "type": "B",
-    "title": "John M. Wever",
-    "desc": "John Madison Wever was a U.S. representative from New York....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/John_M._Wever"
-  },
-  {
-    "type": "B",
-    "title": "Mohawk Valley Gateway Overlook",
-    "desc": "The Mohawk Valley Gateway Overlook is a public pedestrian bridge in the City of Amsterdam, New York, connecting Riverlink Park on the north shore of the Mohawk River to Bridge Street on the south shore. The bridge is 30 feet (9.1 m) wide and spans 511 feet (156 m) over the river....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Mohawk_Valley_Gateway_Overlook"
-  },
-  {
-    "type": "B",
-    "title": "Chaurasi Temple Bharmour",
-    "desc": "Chaurasi Temple is a Hindu temple complex consisting of 84 different shrines, located in the center of Bharmour town of Chamba district in Himachal Pradesh, India. It holds immense religious importance because of temples built around 1400 years ago. Life of people in Bharmour centers around the temple complex-Chaurasi, named so because of 84 shrines built in the periphery of Chaurasi Temple. Chaur...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Chaurasi_Temple_Bharmour"
-  },
-  {
-    "type": "B",
-    "title": "Coca-Cola Red Sparks",
-    "desc": "The Coca-Cola Red Sparks was a Japanese company-owned rugby union team based in Fukuoka city, Kyūshū....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Coca-Cola_Red_Sparks"
-  },
-  {
-    "type": "B",
-    "title": "Krimpen aan den IJssel",
-    "desc": "Krimpen aan den IJssel is a town and municipality in the western Netherlands, in the province of South Holland. The municipality had a population of 29,410 in 2021, and covers an area of 8.95 km2 (3.46 sq mi) of which 1.26 km2 (0.49 sq mi) is water....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Krimpen_aan_den_IJssel"
-  },
-  {
-    "type": "B",
-    "title": "Maslak",
-    "desc": "Maslak is a neighbourhood in Sarıyer, Istanbul Province, in Turkey. Its population is 12,260 (2022). It is one of the main business districts of Istanbul, located on the European side of the city. It was formerly an exclave of the municipality of Şişli, though being far north and actually closer to the municipalities of Sarıyer and Beşiktaş. In 2012, the jurisdiction of the Maslak district was shi...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Maslak"
-  },
-  {
-    "type": "B",
-    "title": "Ham loaf",
-    "desc": "Ham loaf or hamloaf is a baked meat dish, similar to meatloaf, made of ground ham and ground pork and combined with other ingredients to form a loaf-like shape. Distinct in color and taste from meatloaf, ham loaf is often baked with a sweet glaze, often consisting of brown sugar, molasses, pineapples, or cherries. In Pennsylvania, ham loaf is sometimes served with a sauce consisting of vinegar, mu...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Ham_loaf"
-  },
-  {
-    "type": "B",
-    "title": "Kanaya Station",
-    "desc": "Kanaya Station  is an interchange railway station in the city of Shimada, Shizuoka Prefecture, Japan, operated by Central Japan Railway Company. The station is also used by the Ōigawa Railway....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Kanaya_Station"
-  },
-  {
-    "type": "B",
-    "title": "Shinji Tatsuta",
-    "desc": "Shinji Tatsuta was a Japanese ski jumper. He competed in the individual event at the 1936 Winter Olympics....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Shinji_Tatsuta"
-  },
-  {
-    "type": "B",
-    "title": "The Missing Lady",
-    "desc": "The Missing Lady is a 1946 American mystery film directed by Phil Karlson and starring Kane Richmond and Barbara Read. It was the third and final in a series of three films released by Monogram in 1946 starring Richmond as The Shadow, the others being The Shadow Returns and Behind The Mask....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/The_Missing_Lady"
-  },
-  {
-    "type": "B",
-    "title": "United Team of Germany at the 1956 Summer Olympics",
-    "desc": "Germany was represented at the 1956 Summer Olympics by a United Team of Germany of athletes from the Federal Republic of Germany (FRG) and, for the first time at Summer Games, also from East Germany which had not joined in 1952. Also, the Saarland athletes who had to enter as a separate team in 1952 could now join in even though the accession of their state was not yet in effect. Thus, this was th...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/United_Team_of_Germany_at_the_1956_Summer_Olympics"
-  },
-  {
-    "type": "B",
-    "title": "2021 Croatian census",
-    "desc": "The Census of population, households and apartments in the Republic of Croatia in 2021 was the 4th decennial Croatian census. Census Day, the reference day used for the census, was August 31, 2021. This was the first Croatian census to offer options to online self-numeration, in addition to the paper response form used for previous censuses. The census was taken during the COVID-19 pandemic, which...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/2021_Croatian_census"
-  },
-  {
-    "type": "B",
-    "title": "Colón Free Trade Zone",
-    "desc": "The Colón Free Trade Zone is a free port in Panama dedicated to re-exporting a wide variety of merchandise to Latin America and the Caribbean. It is located on the Caribbean coast, near the Atlantic entrance to the Panama Canal, in the province of Colón, within the city of Colón though outside its municipal jurisdiction and operates as an autonomous entity of Panama....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Col%C3%B3n_Free_Trade_Zone"
-  },
-  {
-    "type": "B",
-    "title": "Roman Kent",
-    "desc": "Roman R. Kent was a Polish Holocaust survivor. He was a Łódź Ghetto and Auschwitz Concentration Camp inmate. He was president of the International Auschwitz Committee....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Roman_Kent"
-  },
-  {
-    "type": "B",
-    "title": "X-Men: Reload",
-    "desc": "X-Men: Reload was the name given by Marvel Comics to their May 2004 revamp of the X-Men titles with new looks for the characters and fresh plot points. The revamp was prompted by Grant Morrison's departure from New X-Men....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/X-Men%3A_Reload"
-  },
-  {
-    "type": "B",
-    "title": "Kizhakkekallada",
-    "desc": "Kizhakkekallada, also known as East Kallada, is a large village in the Kollam district in the state of Kerala, India. It is located about 20 kilometres (12 mi) northeast of Kollam....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Kizhakkekallada"
-  },
-  {
-    "type": "B",
-    "title": "Surrender (Diana Ross album)",
-    "desc": "Surrender is the third studio album by American singer Diana Ross, released on July 6, 1971 by Motown Records. The album saw her reuniting with writer-producer team Ashford & Simpson who had overseen her self-titled debut album in 1970. As with Diana Ross, some of the tracks that Ross recorded with the duo had previously been recorded by other Motown artists, including Gladys Knight & the Pips, Ma...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Surrender_(Diana_Ross_album)"
-  },
-  {
-    "type": "B",
-    "title": "Dentatorubral–pallidoluysian atrophy",
-    "desc": "Dentatorubral–pallidoluysian atrophy (DRPLA) is an autosomal dominant spinocerebellar degeneration caused by an expansion of a CAG repeat encoding a polyglutamine tract in the atrophin-1 protein. It is also known as Haw River syndrome and Naito–Oyanagi disease. Although this condition was perhaps first described by Smith et al. in 1958, and several sporadic cases have been reported from Western co...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Dentatorubral%E2%80%93pallidoluysian_atrophy"
-  },
-  {
-    "type": "B",
-    "title": "The Celestial Toymaker",
-    "desc": "The Celestial Toymaker is the seventh serial of the third season of the British science fiction television programme Doctor Who. Written by Brian Hayles and directed by Bill Sellars, it was broadcast on BBC1 in four weekly parts from 2 to 23 April 1966. In the serial, the First Doctor and his travelling companions Steven Taylor and Dodo Chaplet are pitted against a powerful adversary called the To...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/The_Celestial_Toymaker"
-  },
-  {
-    "type": "B",
-    "title": "Presanella",
-    "desc": "Presanella is a mountain in the Adamello-Presanella range of the Italian Alps of northern Italy. Presanella has an elevation of 3,558 meters and is located in the Adamello Brenta National Park within the Trentino province of Italy....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Presanella"
-  },
-  {
-    "type": "B",
-    "title": "Vedaranyam",
-    "desc": "Vedaranyam is a municipality in Nagapattinam district in the Indian state of Tamil Nadu. The town is named after the presiding deity of the Vedaranyeswarar Temple. The recorded history of Vedaranyam is known from medieval Chola period of the 9th century and has been ruled, at different times, by the Medieval Cholas, Later Cholas, Later Pandyas, Vijayanagar Empire and the British. During India's in...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Vedaranyam"
-  },
-  {
-    "type": "B",
-    "title": "Oelwein Community School District",
-    "desc": "Oelwein Community School District is a public school district headquartered in Oelwein, Iowa....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Oelwein_Community_School_District"
-  },
-  {
-    "type": "B",
-    "title": "Aandhi (TV series)",
-    "desc": "Aandhi is a Hindi television serial that aired on Zee TV in November 2003. The serial was produced by Manish Goswami. It was based on the concept of how a mistaken identity can bring ups and downs in one's relationships....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Aandhi_(TV_series)"
-  },
-  {
-    "type": "B",
-    "title": "Thegiornalisti",
-    "desc": "Thegiornalisti was an Italian indie pop band formed in 2009....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Thegiornalisti"
-  },
-  {
-    "type": "B",
-    "title": "A Lesson in Romantics",
-    "desc": "A Lesson in Romantics is the debut studio album by American rock band Mayday Parade. The band resulted from a merger of two separate bands, Kid Named Chicago and Defining Moment. The band released an EP, Tales Told by Dead Friends, in June 2006, which they sold to people by following the 2006 edition of Warped Tour and offering copies; it eventually sold 10,000 copies. The band signed to Fearless ...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/A_Lesson_in_Romantics"
-  },
-  {
-    "type": "B",
-    "title": "Pandora's PlayHouse",
-    "desc": "Pandora’s PlayHouse is the twelfth studio album by Sananda Maitreya, released on March 15, 2021. A double album with 28 tracks, it was released on CD and as a digital download from his website. A single, \"The Madhouse\", was released as a download and streaming, ahead of the album. It also contains a tribute to his idol Prince. Speaking to The Times, he said, \"we definitely saw a lot of ourselves i...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Pandora's_PlayHouse"
-  },
-  {
-    "type": "B",
-    "title": "Pycnocline",
-    "desc": "A pycnocline is the cline or layer where the density gradient is greatest within a body of water. An ocean current is generated by the forces such as breaking waves, temperature and salinity differences, wind, Coriolis effect, and tides caused by the gravitational pull of celestial bodies. In addition, the physical properties in a pycnocline driven by density gradients also affect the flows and ve...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Pycnocline"
+    "title": "Donggureung",
+    "desc": "Donggureung, is a cluster of royal tombs from the Joseon dynasty, the largest of its kind in South Korea. 17 Joseon kings and queens are buried here. The cluster also houses a myo-type tomb. It is located in Guri, Gyeonggi Province.",
+    "url": "https://en.wikipedia.org/wiki/Donggureung"
   },
   {
     "type": "C",
-    "title": "Sergey Nikolsky",
-    "desc": "Sergey Mikhailovich Nikolsky was a Soviet and Russian mathematician....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Sergey_Nikolsky"
+    "title": "Alien Love Secrets",
+    "desc": "Alien Love Secrets is an EP by guitarist Steve Vai, released on March 21, 1995, through Relativity Records. The EP reached No. 125 on the U.S. Billboard 200 and remained on that chart for two weeks, as well as reaching No. 72 on the Dutch albums chart.",
+    "url": "https://en.wikipedia.org/wiki/Alien_Love_Secrets"
   },
   {
     "type": "B",
-    "title": "Bandolero racing",
-    "desc": "Bandolero car racing is a type of entry-level racing in the United States and Canada. Many bandolero car drivers move into Legends racing. Cars can reach in excess of 70 mph, but do not accelerate very quickly. The most wins in Bandolero race cars used to be held by Joey Logano but was broken in 2016 by Clay Thompson, Chandler Smith also tied the record in 2014 but never broke it. The cars are bui...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Bandolero_racing"
+    "title": "Cabaret du Néant",
+    "desc": "Cabaret du Néant was a cabaret in Montmartre, Paris, founded in 1892. The Cabaret du Néant was an early pioneer of the modern theme restaurant and dealt with various aspects of mortality and death. The dark theme of the cabaret included magic tricks and illusions focusing on morbid subjects.",
+    "url": "https://en.wikipedia.org/wiki/Cabaret_du_N%C3%A9ant"
+  },
+  {
+    "type": "B",
+    "title": "Nipponocypris temminckii",
+    "desc": "Nipponocypris temminckii, the dark chub, is a species of freshwater ray-finned fish belonging to the family Xenocyprididae, the East Asian minnows or sharpbellies. It inhabits China, Japan and Korea and has a maximum length of 15.0 centimetres (5.9 in).",
+    "url": "https://en.wikipedia.org/wiki/Nipponocypris_temminckii"
   },
   {
     "type": "C",
-    "title": "Pina Picierno",
-    "desc": "Giuseppina \"Pina\" Picierno is an Italian politician. Born in Santa Maria Capua Vetere, she is a member of the Democratic Party who has been serving in the European Parliament since 2014. Since 2022, she has served as vice-president of the European Parliament....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Pina_Picierno"
+    "title": "Emma Hardy",
+    "desc": "Emma Ann Hardy is a British Labour Party politician who has served as Parliamentary Under-Secretary of State for Water and Flooding since July 2024. She was previously the Member of Parliament (MP) for Kingston upon Hull West and Hessle until the 2024 general election and is the current Member of Parliament (MP) for Kingston upon Hull West and Haltemprice. Until May 2019, she was also a member of ",
+    "url": "https://en.wikipedia.org/wiki/Emma_Hardy"
   },
   {
     "type": "B",
-    "title": "Bangkok Haunted",
-    "desc": "Bangkok Haunted is a 2001 Thai horror anthology film directed by Oxide Pang and Pisut Praesangeam. It consists of three ghost stories, as told by three people sitting around in a darkened Bangkok bar....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Bangkok_Haunted"
+    "title": "Princess Albertina piercing",
+    "desc": "Princess Albertina is a female genital piercing, where a ring enters the urethra and exits through the top of the vagina. Anne Greenblatt described the Princess Albertina to Ralph H. in 1995 as a \"relatively new and experimental piercing.\" Its name comes from the fact that it is analogous to the male Prince Albert piercing.",
+    "url": "https://en.wikipedia.org/wiki/Princess_Albertina_piercing"
   },
   {
     "type": "B",
-    "title": "Cheltenham railway station, Sydney",
-    "desc": "Cheltenham railway station is a suburban railway station located on the Main Northern line, serving the Sydney suburb of Cheltenham. It is served by Sydney Trains T9 Northern Line services....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Cheltenham_railway_station%2C_Sydney"
+    "title": "Animal cracker",
+    "desc": "An animal cracker is a particular type of cracker – cookie in American English – baked in the shape of an animal, usually an animal either at a zoo or a circus, such as a lion, a tiger, a bear, or an elephant. The most common variety is light-colored and slightly sweet, but darker chocolate-flavored and colorful frosted varieties are also sold. Although animal crackers tend to be sweet in flavor l",
+    "url": "https://en.wikipedia.org/wiki/Animal_cracker"
   },
   {
     "type": "B",
-    "title": "Carnoux-en-Provence",
-    "desc": "Carnoux-en-Provence, commonly referred to simply as Carnoux, is a commune in the Bouches-du-Rhône department in the Provence-Alpes-Côte d'Azur region in Southern France. It was created in 1966 from the commune of Roquefort-la-Bédoule....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Carnoux-en-Provence"
+    "title": "Super Proton–Antiproton Synchrotron",
+    "desc": "The Super Proton–Antiproton Synchrotron was a particle accelerator that operated at CERN from 1981 to 1991. To operate as a proton-antiproton collider the Super Proton Synchrotron (SPS) underwent substantial modifications, altering it from a one beam synchrotron to a two-beam collider. The main experiments at the accelerator were UA1 and UA2, where the W and Z bosons were discovered in 1983. Carlo",
+    "url": "https://en.wikipedia.org/wiki/Super_Proton%E2%80%93Antiproton_Synchrotron"
   },
   {
     "type": "B",
-    "title": "Wimmera River",
-    "desc": "The Wimmera River, an inland intermittent river of the Wimmera catchment, is located in the Grampians and Wimmera regions of the Australian state of Victoria. Rising in the Pyrenees, on the northern slopes of the Great Dividing Range, the Wimmera River flows generally north by west and drains into Lake Hindmarsh and Lake Albacutya, a series of ephemeral lakes that, whilst they do not directly empt...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Wimmera_River"
+    "title": "N-0385",
+    "desc": "N-0385 is an experimental small molecule TMPRSS2-inhibitor being investigated for its potential use in the prevention and treatment of COVID-19.",
+    "url": "https://en.wikipedia.org/wiki/N-0385"
   },
   {
     "type": "B",
-    "title": "Chanda baculis",
-    "desc": "Chanda baculis, also known as Himalayan glassy perchlet, is a species of freshwater ray-finned fish in the Asiatic glassfish family Ambassidae and can reach a maximum length of 7 centimetres (2.8 in)....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Chanda_baculis"
+    "title": "Broken Dreams (2019 film)",
+    "desc": "Broken Dreams is a 2019 Polish documentary film directed by Tomasz Magierski that tells the story of Renia and Ariana Spiegel, sisters who experienced the Holocaust as children in Poland. The film was prompted by the 2012 discovery of Renia Spiegel's diary, which she kept from 1939 until her death at the age of 18 in 1942. Broken Dreams premiered on May 2, 2019, at the United Nations in New York, ",
+    "url": "https://en.wikipedia.org/wiki/Broken_Dreams_(2019_film)"
+  },
+  {
+    "type": "A",
+    "title": "Out-of-place artifact",
+    "desc": "An out-of-place artifact is an artifact of historical, archaeological, or paleontological interest to someone that is claimed to have been found in an unusual context, which someone claims to challenge conventional historical chronology by its presence in that context. Some people might think that those artifacts are too advanced for the technology known to have existed at the time, or that human ",
+    "url": "https://en.wikipedia.org/wiki/Out-of-place_artifact"
   },
   {
     "type": "B",
-    "title": "Foselutoclax",
-    "desc": "Foselutoclax is an investigational new drug that is being evaluated for the treatment of age-related eye diseases, particularly diabetic macular edema (DME) and wet age-related macular degeneration (AMD). Developed by Unity Biotechnology, this senolytic compound acts as a potent inhibitor of Bcl-xL, a protein that senescent cells rely on for survival. Foselutoclax is designed to selectively elimin...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Foselutoclax"
+    "title": "Réunion cuckooshrike",
+    "desc": "The Réunion cuckooshrike is a passerine bird in the cuckooshrike family. It is endemic to the island of Réunion, where it is restricted to two areas of mountain forest in the north of the island. Males are dark grey above and pale grey beneath, while females have dark brown upper parts and a streaked breast. The population has been declining and the range contracting, being currently about 16 squa",
+    "url": "https://en.wikipedia.org/wiki/R%C3%A9union_cuckooshrike"
   },
   {
     "type": "B",
-    "title": "Schirmitz",
-    "desc": "Schirmitz is a municipality in the district of Neustadt an der Waldnaab in Bavaria, Germany....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Schirmitz"
+    "title": "Walter of Durham",
+    "desc": "Walter of Durham was a thirteenth-century painter and craftsman who was in service to Henry III and his son Edward I. Details of his life have been ascertained from records in royal ledgers, which show that his son Thomas of Westminster followed the same career. Walter's work, principally in Westminster Palace and Westminster Abbey, included the decoration of the walls and ceiling of the Painted C",
+    "url": "https://en.wikipedia.org/wiki/Walter_of_Durham"
   },
   {
     "type": "B",
-    "title": "Isaack van Ruisdael",
-    "desc": "Isaack van Ruisdael was a Dutch Golden Age painter, brother to Salomon van Ruysdael and the father of the landscape painter Jacob van Ruisdael....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Isaack_van_Ruisdael"
+    "title": "Izborsk",
+    "desc": "Izborsk is a rural locality (village) in Pechorsky District of Pskov Oblast, Russia. It contains one of the most ancient and impressive fortresses of Western Russia. The village lies 30 kilometers (19 mi) to the west of Pskov and just to the east of the Russian-Estonian border.",
+    "url": "https://en.wikipedia.org/wiki/Izborsk"
   },
   {
     "type": "B",
-    "title": "Kero Blaster",
-    "desc": "Kero Blaster  is a platform game created by Daisuke \"Pixel\" Amaya released in 2014 for Windows and iOS. It was the first major release from Pixel since Cave Story in 2004....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Kero_Blaster"
-  },
-  {
-    "type": "B",
-    "title": "Autentico!",
-    "desc": "Autentico! is an album by Brazilian guitarist Bola Sete, released in 1966 through Fantasy Records. In 2004, it was reissued on CD on the anthology Voodoo Village....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Autentico!"
-  },
-  {
-    "type": "B",
-    "title": "Junior English",
-    "desc": "Lindel Beresford English, better known as Junior English, was a Jamaican reggae singer who began his career in the early 1960s before relocating to England....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Junior_English"
-  },
-  {
-    "type": "B",
-    "title": "Juniper shield bug",
-    "desc": "The juniper shield bug, , is a large (9–10.5 mm) green shield bug with distinctive pinkish-red markings on the corium....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Juniper_shield_bug"
-  },
-  {
-    "type": "B",
-    "title": "Tyson Hinz",
-    "desc": "Tyson Boyd Hinz is a Canadian former professional basketball player. Hinz played the power forward position, and last played for Mitteldeutscher BC of the German ProA....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Tyson_Hinz"
+    "title": "Bouchercon",
+    "desc": "Bouchercon, the World Mystery Convention, is an annual fan convention of creators and devotees of mystery and crime fiction. It is named in honor of writer, reviewer, and editor Anthony Boucher, and pronounced the way he pronounced his name, rhyming with \"voucher\".",
+    "url": "https://en.wikipedia.org/wiki/Bouchercon"
   },
   {
     "type": "C",
-    "title": "Shankar IPS",
-    "desc": "Shankar IPS is a 2010 Indian Kannada language action - crime film written and directed by M. S. Ramesh and produced by K. Manju. The film stars Duniya Vijay along with Catherine Tresa, a model making her debut, and Ragini Dwivedi in the lead roles. The film deals with the social issues such as acid attacks on women, the plight of women call centers employees and others. The film was also dubbed in...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Shankar_IPS"
+    "title": "Jimmy Woo",
+    "desc": "James \"Jimmy\" Woo is a fictional secret agent appearing in American comic books published by Marvel Comics. Created by EC Comics writer Al Feldstein and artist Joe Maneely, the Chinese American character first appeared in Yellow Claw #1 from Atlas Comics, the 1950s predecessor of Marvel. Woo has since appeared occasionally in a variety of Marvel publications.",
+    "url": "https://en.wikipedia.org/wiki/Jimmy_Woo"
   },
   {
     "type": "C",
-    "title": "2014 Sugar Bowl",
-    "desc": "The 2014 Sugar Bowl was a college football bowl game played on Thursday, January 2, 2014, at the Mercedes-Benz Superdome in New Orleans, Louisiana. The 80th annual Sugar Bowl, it featured the #10, #11 Oklahoma Sooners of the Big 12 Conference and the #3-ranked Alabama Crimson Tide of the Southeastern Conference. The game was broadcast live on ESPN at 8:30 p.m. EST. It was one of the 2013–14 bowl g...",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/2014_Sugar_Bowl"
+    "title": "Salo Upper Secondary School",
+    "desc": "Salo Upper Secondary School is the biggest upper secondary school in Salo, Finland. It has a capacity of 600 students and around 50 staff members including about 40 teachers, cleaners, cooks and secretaries. The new upper secondary school building offers its services to two schools, the upper secondary school that works there in the day times and upper secondary school for adults or in other words",
+    "url": "https://en.wikipedia.org/wiki/Salo_Upper_Secondary_School"
+  },
+  {
+    "type": "C",
+    "title": "Paulo Lowndes Marques",
+    "desc": "Paulo Henrique Lowndes Marques was a Portuguese politician, lawyer, author, historian and conservationist. He was a founder member of the CDS – People's Party and Secretary of State for Foreign Affairs in Portugal. With a Portuguese father and a British mother, he was an active promoter of Anglo-Portuguese relations.",
+    "url": "https://en.wikipedia.org/wiki/Paulo_Lowndes_Marques"
   },
   {
     "type": "B",
-    "title": "Rudolf Bacher",
-    "desc": "Rudolf Bacher was an Austrian painter and sculptor....",
-    "source": "Global_Network_V3",
-    "url": "https://en.wikipedia.org/wiki/Rudolf_Bacher"
+    "title": "Carole Goble",
+    "desc": "Carole Anne Goble is a Professor of Computer Science at the University of Manchester. Goble co-founded the Software Sustainability Institute (SSI) in 2010, serves as joint head of node at the European Strategy Forum on Research Infrastructure (ESFRI) ELIXIR project of the European Union and is a co-author of the influenential FAIR data principles. She previously served as principal investigator (P",
+    "url": "https://en.wikipedia.org/wiki/Carole_Goble"
+  },
+  {
+    "type": "C",
+    "title": "Greco-Roman mysteries",
+    "desc": "Mystery religions, mystery cults, sacred mysteries or simply mysteries, were religious schools of the Greco-Roman world for which participation was reserved to initiates (mystai). The main characteristic of these religious schools was the secrecy associated with the particulars of the initiation and the ritual practice, which may not be revealed to outsiders. The most famous mysteries of Greco-Rom",
+    "url": "https://en.wikipedia.org/wiki/Greco-Roman_mysteries"
+  },
+  {
+    "type": "B",
+    "title": "Apocolocyntosis",
+    "desc": "The Apocolocyntosis (divi) Claudii, literally Pumpkinification/Gourdification of (the Divine) Claudius, is a satire on the Roman emperor Claudius, which, according to Cassius Dio, was written by Seneca the Younger. A partly extant Menippean satire, an anonymous work called Ludus de morte Divi Claudii in its surviving manuscripts, may or may not be identical to the text mentioned by Cassius Dio. \"A",
+    "url": "https://en.wikipedia.org/wiki/Apocolocyntosis"
+  },
+  {
+    "type": "B",
+    "title": "Villars Maître Chocolatier",
+    "desc": "Villars Maître Chocolatier SA is a Swiss chocolate company founded in 1901 and based in the city of Fribourg. The building in which the company has been in since 1901 is one of national importance and a Swiss cultural heritage asset. The company is noted for its success in selling to tourists, owing to a number of unique products including chocolates with an unusually high percentage of nuts and a",
+    "url": "https://en.wikipedia.org/wiki/Villars_Ma%C3%AEtre_Chocolatier"
+  },
+  {
+    "type": "B",
+    "title": "2022 WJ1",
+    "desc": "2022 WJ1, formerly designated C8FF042, was a small, harmless ≈1-metre near-Earth asteroid or meteoroid that impacted Earth's atmosphere on 19 November 2022 at 08:27 UT in Southern Ontario, Canada, above the Golden Horseshoe region, southwest of Toronto. A fireball was widely visible. Meteorites were also detected by weather radar during dark flight.",
+    "url": "https://en.wikipedia.org/wiki/2022_WJ1"
+  },
+  {
+    "type": "B",
+    "title": "\"N\" Is for Noose",
+    "desc": "\"N\" Is for Noose is the 14th novel in Sue Grafton's \"Alphabet\" series of mystery novels and features Kinsey Millhone, a private eye based in Santa Teresa, California, although much of this novel's action takes place elsewhere in California.",
+    "url": "https://en.wikipedia.org/wiki/%22N%22_Is_for_Noose"
   }
 ]
