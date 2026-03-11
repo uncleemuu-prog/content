@@ -6,21 +6,28 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 这一行是关键：强制给脚本写入权限
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+
       - name: Install dependencies
         run: pip install requests
+
       - name: Run Miner
         run: python miner.py
+
       - name: Commit and Push
         run: |
-          git config --global user.name "IdeaScout-Bot"
-          git config --global user.email "bot@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json
-          git commit -m "Auto-sync new ideas" || exit 0
-          git push
+          # 如果内容没变化就不提交，防止报错
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-sync new ideas" && git push)
