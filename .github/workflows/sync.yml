@@ -1,0 +1,26 @@
+name: Daily Idea Sync
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Run Miner
+        run: python miner.py
+      - name: Commit and Push
+        run: |
+          git config --global user.name "IdeaScout-Bot"
+          git config --global user.email "bot@github.com"
+          git add data.json
+          git commit -m "Auto-sync new ideas" || exit 0
+          git push
