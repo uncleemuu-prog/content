@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>IdeaScout | Global Traffic Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #000; --text: #fff; --sub: #666; --line: #222; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
+        header { padding: 60px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: flex-end; }
+        h1 { font-weight: 200; font-size: 32px; letter-spacing: -1px; }
+        .filter-bar { padding: 30px 60px; display: flex; gap: 30px; font-size: 11px; color: var(--sub); text-transform: uppercase; }
+        .filter-item { cursor: pointer; transition: 0.3s; }
+        .filter-item.active { color: var(--text); border-bottom: 1px solid var(--text); }
+        .grid { padding: 0 60px; display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
+        .card { background: var(--bg); padding: 40px; min-height: 400px; display: flex; flex-direction: column; }
+        .tag { font-size: 10px; color: var(--sub); margin-bottom: 30px; letter-spacing: 2px; }
+        .title { font-size: 22px; font-weight: 400; margin-bottom: 15px; }
+        .desc { font-size: 14px; line-height: 1.8; color: var(--sub); flex-grow: 1; }
+        .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; font-size: 10px; color: var(--sub); }
+        .btn { color: var(--text); cursor: pointer; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IDEASCOUT</h1>
+        <div style="font-size: 10px; color: var(--sub);">SOP DATA FLOW / ONLINE</div>
+    </header>
+    <div class="filter-bar" id="filter">
+        <div class="filter-item active" data-type="ALL">All Sources</div>
+        <div class="filter-item" data-type="A">Humanity [A]</div>
+        <div class="filter-item" data-type="B">Archive [B]</div>
+        <div class="filter-item" data-type="C">System [C]</div>
+    </div>
+    <div class="grid" id="grid"></div>
+
+    <script>
+        // 核心逻辑：从云端 JSON 异步获取数据
+        async function loadData() {
+            try {
+                const res = await fetch('./data.json');
+                const data = await res.json();
+                render(data);
+            } catch (e) {
+                console.log("Waiting for data.json sync...");
+            }
+        }
+
+        function render(items) {
+            const container = document.getElementById('grid');
+            container.innerHTML = items.map(item => `
+                <div class="card">
+                    <div class="tag">// TYPE_${item.type}</div>
+                    <div class="title">${item.title}</div>
+                    <div class="desc">${item.desc}</div>
+                    <div class="footer">
+                        <div class="btn" onclick="alert('SOP建议：从事实冷峻切入，参考《24个比利》节奏')">GET SOP HOOK</div>
+                        <div>REF: ${item.source}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        loadData();
+    </script>
+</body>
+</html>
