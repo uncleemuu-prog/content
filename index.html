@@ -2,46 +2,63 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>IdeaScout | Live Engine</title>
+    <title>IdeaScout | 深度内容猎头</title>
     <style>
         :root { --bg: #000; --text: #fff; --sub: #666; --line: #222; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
-        header { padding: 80px 60px 40px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1px; background: var(--line); border-bottom: 1px solid var(--line); }
-        .card { background: var(--bg); padding: 50px 40px; min-height: 400px; display: flex; flex-direction: column; transition: 0.3s; position: relative; }
-        .card:hover { background: #080808; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; }
+        header { padding: 60px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 1px; background: var(--line); }
+        .card { background: var(--bg); padding: 50px 40px; min-height: 450px; display: flex; flex-direction: column; }
         .tag { font-size: 10px; color: var(--sub); margin-bottom: 30px; letter-spacing: 2px; }
-        .title { font-size: 22px; line-height: 1.3; margin-bottom: 20px; font-weight: 400; color: #eee; }
-        .desc { font-size: 14px; line-height: 1.8; color: var(--sub); flex-grow: 1; }
+        .title { font-size: 22px; line-height: 1.4; margin-bottom: 20px; font-weight: 500; color: #fff; }
+        .desc { font-size: 14px; line-height: 1.8; color: #aaa; flex-grow: 1; }
+        .zh-box { background: #111; padding: 15px; border-radius: 4px; margin-top: 20px; font-size: 13px; color: #888; border-left: 2px solid #333; }
         .footer { margin-top: 30px; display: flex; justify-content: space-between; font-size: 11px; }
-        .btn { color: var(--text); cursor: pointer; text-decoration: underline; }
+        .btn { color: var(--text); cursor: pointer; text-decoration: none; border-bottom: 1px solid #444; }
     </style>
 </head>
 <body>
     <header>
-        <h1 style="font-weight:200; letter-spacing:5px;">IDEASCOUT</h1>
-        <div style="font-size:10px; color:var(--sub)">右键网页使用“翻成中文”刷全量素材</div>
+        <h1 style="font-weight:200; letter-spacing:5px;">IDEASCOUT / 精准猎头</h1>
+        <div style="font-size:10px; color:var(--sub)">已启动硬核内容雷达模式</div>
     </header>
     <div class="grid" id="grid"></div>
 
     <script>
+        // 调用谷歌翻译接口
+        async function translate(text) {
+            try {
+                const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=${encodeURIComponent(text)}`);
+                const data = await res.json();
+                return data[0].map(x => x[0]).join('');
+            } catch { return "翻译引擎繁忙..."; }
+        }
+
         async function init() {
             const res = await fetch('./data.json?t=' + Date.now());
             const data = await res.json();
             const container = document.getElementById('grid');
             
-            container.innerHTML = data.map(item => `
-                <div class="card">
-                    <div class="tag">// ${item.type}_STREAM</div>
+            for (let item of data) {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <div class="tag">// TARGET_ID: ${item.type}_MODEL</div>
                     <div class="title">${item.title}</div>
                     <div class="desc">${item.desc}</div>
+                    <div class="zh-box">正在解析中文逻辑...</div>
                     <div class="footer">
-                        <a href="${item.url}" target="_blank" class="btn">VIEW SOURCE</a>
-                        <div class="btn" onclick="alert('建议SOP：冷峻实录风格。禁用营销号句式。')">SOP HOOK</div>
+                        <a href="${item.url}" target="_blank" class="btn">VIEW RAW SOURCE</a>
+                        <div class="btn" onclick="alert('流量建议：该选题符合冷峻事实风格，建议从细节切入。')">SOP HOOK</div>
                     </div>
-                </div>
-            `).join('');
+                `;
+                container.appendChild(card);
+                
+                // 异步翻译标题和内容摘要
+                translate(item.title + ": " + item.desc).then(zhText => {
+                    card.querySelector('.zh-box').innerText = zhText;
+                });
+            }
         }
         init();
     </script>
