@@ -2,66 +2,48 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>IdeaScout | Live Hub</title>
+    <title>IdeaScout | Live Engine</title>
     <style>
-        :root { --bg: #000; --text: #fff; --sub: #888; --line: #1a1a1a; }
-        body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; }
-        header { padding: 60px; border-bottom: 1px solid var(--line); }
-        h1 { font-size: 24px; font-weight: 200; letter-spacing: 4px; }
-        .nav { padding: 20px 60px; display: flex; gap: 30px; border-bottom: 1px solid var(--line); font-size: 11px; letter-spacing: 1px; color: var(--sub); }
-        .nav-item { cursor: pointer; transition: 0.3s; }
-        .nav-item:hover, .nav-item.active { color: var(--text); }
-        /* 响应式瀑布流网格 */
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); background: var(--line); gap: 1px; border-bottom: 1px solid var(--line); }
-        .card { background: var(--bg); padding: 40px; min-height: 450px; display: flex; flex-direction: column; transition: 0.3s; }
-        .card:hover { background: #050505; }
-        .tag { font-size: 10px; color: var(--sub); margin-bottom: 30px; font-family: monospace; }
-        .title { font-size: 20px; line-height: 1.4; margin-bottom: 20px; font-weight: 400; }
-        .desc { font-size: 13px; line-height: 1.8; color: var(--sub); flex-grow: 1; overflow: hidden; }
-        .footer { margin-top: 30px; display: flex; justify-content: space-between; font-size: 11px; border-top: 1px solid var(--line); padding-top: 20px; }
-        .btn { cursor: pointer; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--text); padding-bottom: 2px; }
+        :root { --bg: #000; --text: #fff; --sub: #666; --line: #222; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+        header { padding: 80px 60px 40px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1px; background: var(--line); border-bottom: 1px solid var(--line); }
+        .card { background: var(--bg); padding: 50px 40px; min-height: 400px; display: flex; flex-direction: column; transition: 0.3s; position: relative; }
+        .card:hover { background: #080808; }
+        .tag { font-size: 10px; color: var(--sub); margin-bottom: 30px; letter-spacing: 2px; }
+        .title { font-size: 22px; line-height: 1.3; margin-bottom: 20px; font-weight: 400; color: #eee; }
+        .desc { font-size: 14px; line-height: 1.8; color: var(--sub); flex-grow: 1; }
+        .footer { margin-top: 30px; display: flex; justify-content: space-between; font-size: 11px; }
+        .btn { color: var(--text); cursor: pointer; text-decoration: underline; }
     </style>
 </head>
 <body>
-    <header><h1>IDEASCOUT / 灵感池</h1></header>
-    <div class="nav" id="nav">
-        <div class="nav-item active" data-type="ALL">ALL SOURCES</div>
-        <div class="nav-item" data-type="A">HUMANITY [A]</div>
-        <div class="nav-item" data-type="B">ARCHIVE [B]</div>
-        <div class="nav-item" data-type="C">SYSTEM [C]</div>
-    </div>
+    <header>
+        <h1 style="font-weight:200; letter-spacing:5px;">IDEASCOUT</h1>
+        <div style="font-size:10px; color:var(--sub)">右键网页使用“翻成中文”刷全量素材</div>
+    </header>
     <div class="grid" id="grid"></div>
 
     <script>
-        let allData = [];
-        async function load() {
+        async function init() {
             const res = await fetch('./data.json?t=' + Date.now());
-            allData = await res.json();
-            render('ALL');
-        }
-        function render(type) {
+            const data = await res.json();
             const container = document.getElementById('grid');
-            const data = type === 'ALL' ? allData : allData.filter(d => d.type === type);
+            
             container.innerHTML = data.map(item => `
                 <div class="card">
-                    <div class="tag">// ${item.source} | TYPE_${item.type}</div>
+                    <div class="tag">// ${item.type}_STREAM</div>
                     <div class="title">${item.title}</div>
                     <div class="desc">${item.desc}</div>
                     <div class="footer">
-                        <a href="${item.url}" target="_blank" class="btn">查看生肉原文</a>
-                        <div class="btn" onclick="alert('流量模型提示：此内容符合【${item.type}】型爆款逻辑，建议采用冷峻风格。')">SOP HOOK</div>
+                        <a href="${item.url}" target="_blank" class="btn">VIEW SOURCE</a>
+                        <div class="btn" onclick="alert('建议SOP：冷峻实录风格。禁用营销号句式。')">SOP HOOK</div>
                     </div>
                 </div>
             `).join('');
         }
-        document.getElementById('nav').onclick = (e) => {
-            if(e.target.className === 'nav-item') {
-                document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
-                e.target.classList.add('active');
-                render(e.target.dataset.type);
-            }
-        }
-        load();
+        init();
     </script>
 </body>
 </html>
