@@ -2,95 +2,66 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>IdeaScout | Global Traffic Engine</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>IdeaScout | Live Hub</title>
     <style>
-        :root { --bg: #000; --text: #fff; --sub: #666; --line: #222; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
-        header { padding: 60px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: flex-end; }
-        h1 { font-weight: 200; font-size: 32px; letter-spacing: -1px; }
-        .filter-bar { padding: 30px 60px; display: flex; gap: 30px; font-size: 11px; color: var(--sub); text-transform: uppercase; }
-        .filter-item { cursor: pointer; transition: 0.3s; }
-        .filter-item.active { color: var(--text); border-bottom: 1px solid var(--text); }
-        .grid { padding: 0 60px; display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
-        .card { background: var(--bg); padding: 40px; min-height: 400px; display: flex; flex-direction: column; }
-        .tag { font-size: 10px; color: var(--sub); margin-bottom: 30px; letter-spacing: 2px; }
-        .title { font-size: 22px; font-weight: 400; margin-bottom: 15px; }
-        .desc { font-size: 14px; line-height: 1.8; color: var(--sub); flex-grow: 1; }
-        .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; font-size: 10px; color: var(--sub); }
-        .btn { color: var(--text); cursor: pointer; text-decoration: underline; }
+        :root { --bg: #000; --text: #fff; --sub: #888; --line: #1a1a1a; }
+        body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; }
+        header { padding: 60px; border-bottom: 1px solid var(--line); }
+        h1 { font-size: 24px; font-weight: 200; letter-spacing: 4px; }
+        .nav { padding: 20px 60px; display: flex; gap: 30px; border-bottom: 1px solid var(--line); font-size: 11px; letter-spacing: 1px; color: var(--sub); }
+        .nav-item { cursor: pointer; transition: 0.3s; }
+        .nav-item:hover, .nav-item.active { color: var(--text); }
+        /* 响应式瀑布流网格 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); background: var(--line); gap: 1px; border-bottom: 1px solid var(--line); }
+        .card { background: var(--bg); padding: 40px; min-height: 450px; display: flex; flex-direction: column; transition: 0.3s; }
+        .card:hover { background: #050505; }
+        .tag { font-size: 10px; color: var(--sub); margin-bottom: 30px; font-family: monospace; }
+        .title { font-size: 20px; line-height: 1.4; margin-bottom: 20px; font-weight: 400; }
+        .desc { font-size: 13px; line-height: 1.8; color: var(--sub); flex-grow: 1; overflow: hidden; }
+        .footer { margin-top: 30px; display: flex; justify-content: space-between; font-size: 11px; border-top: 1px solid var(--line); padding-top: 20px; }
+        .btn { cursor: pointer; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--text); padding-bottom: 2px; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>IDEASCOUT</h1>
-        <div style="font-size: 10px; color: var(--sub);">SOP DATA FLOW / ONLINE</div>
-    </header>
-    <div class="filter-bar" id="filter">
-        <div class="filter-item active" data-type="ALL">All Sources</div>
-        <div class="filter-item" data-type="A">Humanity [A]</div>
-        <div class="filter-item" data-type="B">Archive [B]</div>
-        <div class="filter-item" data-type="C">System [C]</div>
+    <header><h1>IDEASCOUT / 灵感池</h1></header>
+    <div class="nav" id="nav">
+        <div class="nav-item active" data-type="ALL">ALL SOURCES</div>
+        <div class="nav-item" data-type="A">HUMANITY [A]</div>
+        <div class="nav-item" data-type="B">ARCHIVE [B]</div>
+        <div class="nav-item" data-type="C">SYSTEM [C]</div>
     </div>
     <div class="grid" id="grid"></div>
 
-<script>
-    let allData = [];
-
-    async function init() {
-        try {
-            // 加上随机数后缀，防止浏览器缓存旧数据
-            const res = await fetch('./data.json?t=' + new Date().getTime());
+    <script>
+        let allData = [];
+        async function load() {
+            const res = await fetch('./data.json?t=' + Date.now());
             allData = await res.json();
-            
-            // 如果抓取失败，显示提示
-            if (allData.length === 0) {
-                document.getElementById('grid').innerHTML = '<div class="card">Searching for new signals...</div>';
-                return;
-            }
-            
             render('ALL');
-        } catch (e) {
-            console.error("Data load failed");
         }
-    }
-
-    function render(type) {
-        const container = document.getElementById('grid');
-        // 过滤数据，并且不再显示你那几个 Top 案例（除非它们出现在新抓取中）
-        const filtered = type === 'ALL' ? allData : allData.filter(d => d.type === type);
-        
-        container.innerHTML = filtered.map(item => `
-            <div class="card">
-                <div class="tag">// SOURCE: ${item.source} | TYPE_${item.type}</div>
-                <div class="title">${item.title}</div>
-                <div class="desc">${item.desc}</div>
-                <div class="footer">
-                    <div class="btn-hook" onclick="window.open('${item.url}', '_blank')">VIEW SOURCE</div>
-                    <div class="btn-hook" style="color:#666" onclick="copySOP('${item.title}')">GET SOP</div>
+        function render(type) {
+            const container = document.getElementById('grid');
+            const data = type === 'ALL' ? allData : allData.filter(d => d.type === type);
+            container.innerHTML = data.map(item => `
+                <div class="card">
+                    <div class="tag">// ${item.source} | TYPE_${item.type}</div>
+                    <div class="title">${item.title}</div>
+                    <div class="desc">${item.desc}</div>
+                    <div class="footer">
+                        <a href="${item.url}" target="_blank" class="btn">查看生肉原文</a>
+                        <div class="btn" onclick="alert('流量模型提示：此内容符合【${item.type}】型爆款逻辑，建议采用冷峻风格。')">SOP HOOK</div>
+                    </div>
                 </div>
-            </div>
-        `).join('');
-    }
-
-    function copySOP(title) {
-        const sop = `【${title}】SOP策略：\n1. 开篇5s：冷峻叙述，直接抛出未解核心矛盾。\n2. 中段：3个事实证据支撑，禁止营销号废话。\n3. 结尾：留白或反问，引导评论区讨论。`;
-        navigator.clipboard.writeText(sop);
-        alert('SOP 脚本逻辑已复制到剪贴板');
-    }
-
-    // 过滤器点击逻辑
-    document.getElementById('filterBar').onclick = (e) => {
-        if(e.target.classList.contains('filter-item')) {
-            document.querySelectorAll('.filter-item').forEach(el => el.classList.remove('active'));
-            e.target.classList.add('active');
-            render(e.target.dataset.type);
+            `).join('');
         }
-    };
-
-    init();
-</script>
+        document.getElementById('nav').onclick = (e) => {
+            if(e.target.className === 'nav-item') {
+                document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+                e.target.classList.add('active');
+                render(e.target.dataset.type);
+            }
+        }
+        load();
+    </script>
 </body>
-
 </html>
