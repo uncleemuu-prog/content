@@ -35,34 +35,62 @@
     </div>
     <div class="grid" id="grid"></div>
 
-    <script>
-        // 核心逻辑：从云端 JSON 异步获取数据
-        async function loadData() {
-            try {
-                const res = await fetch('./data.json');
-                const data = await res.json();
-                render(data);
-            } catch (e) {
-                console.log("Waiting for data.json sync...");
+<script>
+    let allData = [];
+
+    async function init() {
+        try {
+            // 加上随机数后缀，防止浏览器缓存旧数据
+            const res = await fetch('./data.json?t=' + new Date().getTime());
+            allData = await res.json();
+            
+            // 如果抓取失败，显示提示
+            if (allData.length === 0) {
+                document.getElementById('grid').innerHTML = '<div class="card">Searching for new signals...</div>';
+                return;
             }
+            
+            render('ALL');
+        } catch (e) {
+            console.error("Data load failed");
         }
+    }
 
-        function render(items) {
-            const container = document.getElementById('grid');
-            container.innerHTML = items.map(item => `
-                <div class="card">
-                    <div class="tag">// TYPE_${item.type}</div>
-                    <div class="title">${item.title}</div>
-                    <div class="desc">${item.desc}</div>
-                    <div class="footer">
-                        <div class="btn" onclick="alert('SOP建议：从事实冷峻切入，参考《24个比利》节奏')">GET SOP HOOK</div>
-                        <div>REF: ${item.source}</div>
-                    </div>
+    function render(type) {
+        const container = document.getElementById('grid');
+        // 过滤数据，并且不再显示你那几个 Top 案例（除非它们出现在新抓取中）
+        const filtered = type === 'ALL' ? allData : allData.filter(d => d.type === type);
+        
+        container.innerHTML = filtered.map(item => `
+            <div class="card">
+                <div class="tag">// SOURCE: ${item.source} | TYPE_${item.type}</div>
+                <div class="title">${item.title}</div>
+                <div class="desc">${item.desc}</div>
+                <div class="footer">
+                    <div class="btn-hook" onclick="window.open('${item.url}', '_blank')">VIEW SOURCE</div>
+                    <div class="btn-hook" style="color:#666" onclick="copySOP('${item.title}')">GET SOP</div>
                 </div>
-            `).join('');
-        }
+            </div>
+        `).join('');
+    }
 
-        loadData();
-    </script>
+    function copySOP(title) {
+        const sop = `【${title}】SOP策略：\n1. 开篇5s：冷峻叙述，直接抛出未解核心矛盾。\n2. 中段：3个事实证据支撑，禁止营销号废话。\n3. 结尾：留白或反问，引导评论区讨论。`;
+        navigator.clipboard.writeText(sop);
+        alert('SOP 脚本逻辑已复制到剪贴板');
+    }
+
+    // 过滤器点击逻辑
+    document.getElementById('filterBar').onclick = (e) => {
+        if(e.target.classList.contains('filter-item')) {
+            document.querySelectorAll('.filter-item').forEach(el => el.classList.remove('active'));
+            e.target.classList.add('active');
+            render(e.target.dataset.type);
+        }
+    };
+
+    init();
+</script>
 </body>
+
 </html>
